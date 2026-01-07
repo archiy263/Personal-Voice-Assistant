@@ -12,7 +12,7 @@ import numpy as np
 recognizer = sr.Recognizer()
 sr.Microphone = sr.Microphone
 
-# ------------------ TTS ------------------
+# TTS
 def respond(text):
     print("Assistant:", text)
     try:
@@ -24,7 +24,7 @@ def respond(text):
     except Exception as e:
         print("Audio Error:", e)
 
-# ------------------ STT ------------------
+# STT
 
 def listen_for_command():
     respond("Listening")
@@ -46,7 +46,7 @@ def listen_for_command():
         respond("Speech service is unavailable.")
     return ""
 
-# ------------------ Command Processing ------------------
+# Command Processing 
 def process_command(command):
 
     if "time" in command:
@@ -77,7 +77,7 @@ def process_command(command):
     else:
         respond("Sorry, I don't know how to do that yet")
 
-# ------------------ Main Loop ------------------
+# Main Loop 
 def main():
     respond("Personal Voice Assistant Activated")
 
@@ -88,6 +88,7 @@ def main():
         if command:
             process_command(command)
 
-# ------------------ Start Program ------------------
+# Start Program
 if __name__ == "__main__":
     main()
+
