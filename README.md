@@ -34,8 +34,9 @@ A Python-based personal voice assistant that performs common desktop tasks using
 
 Before running the project, install these dependencies:
 
+```bash
 pip install SpeechRecognition gTTS pydub pyautogui sounddevice numpy
-
+```
 ## 2️⃣ Install FFmpeg
 
 Download FFmpeg from:  
@@ -65,6 +66,6 @@ Navigate to the project folder and run:
 
 ```bash
 python assistant.py
-
+```
 
 
